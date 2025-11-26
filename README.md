@@ -3,4 +3,3 @@ EduFlex LMS - A scalable learning management system for Victorian Institute of T
 
 
 
-add course creation module
