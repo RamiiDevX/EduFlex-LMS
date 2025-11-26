@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Authenticated File Download</title>
+
+   <link rel="stylesheet" href="css/pretty.css" />
+
+   <!-- This library is used to encode username and password for BASIC authentication. -->
+   <script src="lib/base64.js"></script>
+
+   <!-- This library handles saving a blob returned by XMLHTTPRequest to a file. -->
+   <script src="lib/FileSaver.js"></script>
+
+   <!-- This is mainly the event handler for the click. -->
+   <script src="lib/authenticated-file-download.js"></script>
+</head>
+
+<body>
+
+   <div class="prettyBox">
+      <table>
+         <tr>
+            <td colspan="2" align="center"><b>Download PDF Rendition</b>
+            </td>
+         </tr>
+         <tr>
+            <td>Server</td>
+            <td>
+               <input type="text" id="nuxeoUrl" value="http://localhost:8080/nuxeo"></input>
+            </td>
+         </tr>
+         <tr>
+            <td>User name</td>
+            <td>
+               <input type="text" id="userName" value="Administrator"></input>
+            </td>
+         </tr>
+         <tr>
+            <td>Password</td>
+            <td>
+               <input type="password" id="password" value="Administrator"></input>
+            </td>
+         </tr>
+         <tr>
+            <td>Document ID</td>
+            <td>
+               <input type="text" id="docId"></input>
+            </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td align="right">
+               <button type="button" id="fileDownloadLink">Download</button>
+            </td>
+
+         </tr>
+      </table>
+   </div>
+</body>
+
+</html>
